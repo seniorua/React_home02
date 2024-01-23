@@ -1,0 +1,114 @@
+html {
+
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+#root {
+  color: white;
+  height: 100vh;
+  background-color: rgb(54, 54, 54);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* border: 1px solid rgb(255, 255, 255); */
+}
+
+header {
+  height: 75px;
+  width: 100%;
+  border-bottom: 2px solid rgb(160, 144, 119);
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  height: calc(100% - 150px);
+  width: 100%;
+  overflow-y: scroll;
+  border-bottom: 2px solid rgb(160, 144, 119);
+}
+footer {
+  height: 75px;
+  width: 100%;
+  /* border-bottom: 1px solid yellow; */
+}
+a {
+  color: bisque;
+  text-decoration: none;
+  transition: .3s;
+  padding: 10px;
+}
+nav a:hover {
+  color: red;
+  /* opacity: .5; */
+}
+nav a:active {
+  color: black;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+.author-list {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  /* align-items: center; */
+}
+.author-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  /* border: 1px solid red; */
+  padding: 10px;
+  max-width: 400px;
+  background-color: rgb(57, 59, 73);
+  transition: .3s;
+  box-shadow: 0px 0px 15px 1px rgb(92, 92, 92);
+  /* , inset 0 0 3px 1px rgba(128, 128, 128, 0.452); */
+}
+.author-item:hover {
+  transform: scale(1.03);
+
+}
+
+.author-img {
+  display: block;
+  width: 150px;
+  height: 220px;
+  object-fit: cover;
+}
+
+.author-item button {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid rgba(172, 119, 119, 0.404);
+  border-radius: 10px;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  transition: .3s;
+}
+.author-item button:hover {
+  background-color: rgb(68, 54, 54);
+}
+.author-item button:active {
+  background-color: rgb(173, 102, 102);
+}
