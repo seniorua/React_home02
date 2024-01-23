@@ -74,18 +74,23 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   /* border: 1px solid red; */
-  padding: 10px;
+  padding: 20px;
   max-width: 400px;
   background-color: rgb(57, 59, 73);
   transition: .3s;
-  box-shadow: 0px 0px 15px 1px rgb(92, 92, 92);
-  /* , inset 0 0 3px 1px rgba(128, 128, 128, 0.452); */
+  box-shadow: 0px 0px 15px 1px rgb(92, 92, 92), inset 0px 0px 5px 2px rgb(61, 56, 56);
 }
 .author-item:hover {
   transform: scale(1.03);
 
+}
+
+.author-item-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .author-img {
